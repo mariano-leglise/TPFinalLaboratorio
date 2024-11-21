@@ -1,0 +1,8 @@
+
+.principal {
+  
+  flex: 1; 
+  padding: 20px; 
+  background: transparent; 
+  overflow: auto; 
+}

@@ -1,0 +1,66 @@
+.aside {
+  background-image: url(../assets/fondo.jpg);
+  padding: 20px;
+  width: 200px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 8px;
+  backdrop-filter: blur(5px); 
+  position: relative; 
+}
+
+.aside::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.aside h3 {
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.aside ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.aside ul li {
+  margin-bottom: 20px;
+}
+
+.aside ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.aside ul li a:hover {
+  color: #007BFF;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .aside {
+    width: 100%;
+    padding: 10px 0;
+  }
+}

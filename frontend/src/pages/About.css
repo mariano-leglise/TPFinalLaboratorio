@@ -1,0 +1,108 @@
+/* General para todo el body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fondo oscuro general */
+}
+
+/* Estilo específico para el contenedor de la página About */
+.about-container {
+    color: white;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* Título principal de la página About */
+.about-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #f3f3f3;
+}
+
+/* Estilo de cada banda en la página About */
+.band {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Título de cada banda en la página About */
+.band h2 {
+    margin: 0;
+    border-bottom: 2px solid #f3f3f3;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Párrafos dentro de cada banda */
+.band p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Subtítulo de los integrantes de la banda */
+.band h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+}
+
+/* Listado de integrantes y otros detalles */
+.band ul {
+    padding-left: 20px;
+}
+
+.band ul li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #c0c0c0;
+}
+
+/* Enlaces de redes sociales */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #f3f3f3;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1db954; /* Verde típico de los enlaces de redes sociales */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-container h1 {
+        font-size: 2rem;
+    }
+
+    .band h2 {
+        font-size: 1.8rem;
+    }
+
+    .band h3 {
+        font-size: 1.3rem;
+    }
+
+    .band ul li {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+    }
+}
